@@ -1,4 +1,4 @@
-package testAutomationProject;
+package testAutomationProject.webTests;
 
 import org.testng.annotations.Test;
 

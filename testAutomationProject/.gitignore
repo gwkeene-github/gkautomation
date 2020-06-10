@@ -1,0 +1,10 @@
+/.classpath
+
+### Eclipse ###
+.recommenders/
+.metadata/
+.settings/
+
+### TestNG ###
+test-output/
+/.project

@@ -1,4 +1,4 @@
-package testAutomationProject;
+package testAutomationProject.webTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +10,7 @@ public class WebBaseTest{
 	private static WebDriver driver;
 	
     @BeforeClass
-	protected void startDriver() {
+	private void startDriver() {
 
         System.setProperty("webdriver.chrome.driver", "resources\\drivers\\chromedriver.exe");
         
@@ -19,7 +19,7 @@ public class WebBaseTest{
 	}
     
     @AfterClass
-    protected void quitBrowser() {
+    private void quitBrowser() {
     	
     	driver.quit();  	
     	
