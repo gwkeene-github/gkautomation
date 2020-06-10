@@ -4,7 +4,7 @@
 
 	<test name="GoogleTests">
 		<classes>
-			<class name="testAutomationProject.WebTest">
+			<class name="testAutomationProject.webTests.WebTest">
 				<methods>
 					<include name="searchTest"/>
 				</methods>

@@ -7,10 +7,10 @@ import org.testng.annotations.BeforeClass;
 
 public class WebBaseTest{
 	
-	private static WebDriver driver;
+	protected static WebDriver driver;
 	
     @BeforeClass
-	private void startDriver() {
+	protected void startDriver() {
 
         System.setProperty("webdriver.chrome.driver", "resources\\drivers\\chromedriver.exe");
         
@@ -19,7 +19,7 @@ public class WebBaseTest{
 	}
     
     @AfterClass
-    private void quitBrowser() {
+    protected void quitBrowser() {
     	
     	driver.quit();  	
     	
@@ -29,6 +29,13 @@ public class WebBaseTest{
     	
     	driver.get(url);
     }
+    
+    public WebDriver getDriver() {
+    	
+    	WebDriver webDriver = driver;
+    	return webDriver;
+    }
 	
+
 
 }
