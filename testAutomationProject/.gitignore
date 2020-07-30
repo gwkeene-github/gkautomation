@@ -8,3 +8,4 @@
 ### TestNG ###
 test-output/
 /.project
+/Extent.html
